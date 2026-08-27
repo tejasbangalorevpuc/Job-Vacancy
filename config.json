@@ -1,0 +1,51 @@
+{
+  "organizations": [
+    {"name": "IISc Bengaluru", "url": "https://www.iisc.ac.in/careers/", "type": "html"},
+    {"name": "IISc Recruitment Portal", "url": "https://recruitment.iisc.ac.in/", "type": "html"},
+    {"name": "NCBS-TIFR", "url": "https://www.ncbs.res.in/jobs", "type": "html"},
+    {"name": "ICTS-TIFR", "url": "https://www.icts.res.in/jobs", "type": "html"},
+    {"name": "Raman Research Institute", "url": "https://www.rri.res.in/vacancies.html", "type": "html"},
+    {"name": "NIMHANS", "url": "https://nimhans.ac.in/recruitment/", "type": "html"},
+    {"name": "CPRI Bengaluru", "url": "https://www.cpri.in/recruitment", "type": "html"},
+    {"name": "CSIR-NAL Bengaluru", "url": "https://www.nal.res.in/en/careers", "type": "html"},
+    {"name": "NLSIU Bengaluru", "url": "https://www.nls.ac.in/category/recruitments/", "type": "html"},
+    {"name": "IIIT Bangalore", "url": "https://www.iiitb.ac.in/careers", "type": "html"},
+    {"name": "BEL (Bharat Electronics)", "url": "https://bel-india.in/careers.aspx", "type": "html"},
+    {"name": "BEML", "url": "https://www.bemlindia.in/career", "type": "html"},
+    {"name": "HAL", "url": "https://hal-india.co.in/Career", "type": "html"},
+    {"name": "ISRO ISAC/URSC Bengaluru", "url": "https://www.ursc.gov.in/careers.jsp", "type": "html"},
+    {"name": "ISRO Central (ICRB)", "url": "https://www.isro.gov.in/Careers.html", "type": "html"}
+  ],
+
+  "_note": "Verify each URL once before first run — government sites restructure their careers pages every 1-2 years and a stale URL will just silently return zero matches, not an error. The script logs a warning if a page returns very little text, which usually means the URL moved.",
+
+  "keywords_any": [
+    "Deputy Registrar",
+    "Assistant Registrar",
+    "Administrative Officer",
+    "Deputy Administrative Officer",
+    "Deputy Director (Administration)",
+    "Purchase Officer",
+    "Stores Officer",
+    "Procurement Officer",
+    "Materials Management",
+    "Contracts Officer",
+    "Commercial Officer",
+    "Level 10",
+    "Level 11",
+    "Level 12",
+    "Pay Matrix Level 10",
+    "Pay Matrix Level 11",
+    "Pay Matrix Level 12"
+  ],
+
+  "profile": {
+    "location_preference": ["Bengaluru", "Bangalore"],
+    "employer_types": ["Central Government", "Central PSU", "Autonomous Body", "Statutory Body", "University"],
+    "employment_type_preference": ["Permanent", "Regular", "Direct Recruitment", "Deputation"],
+    "experience_areas": ["Administration", "Procurement", "Purchase", "Stores", "Materials Management", "Tenders", "Contracts", "Operations", "IT Systems", "Establishment"],
+    "min_pay_level": 10,
+    "psu_experience_accepted_boost": true,
+    "pay_protection_flag_keywords": ["deputation", "pay protection", "pay fixation", "absorption"]
+  }
+}
