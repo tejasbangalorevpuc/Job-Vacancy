@@ -25,6 +25,8 @@ import urllib.error
 
 try:
     import requests
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 except ImportError:
     requests = None
 
@@ -50,18 +52,30 @@ HEADERS = {
 # --------------------------------------------------------------------------
 
 def fetch_page(url: str) -> str:
-    """Fetch page text; falls back to urllib if requests isn't installed."""
+    """Fetch page text; falls back to urllib if requests isn't installed.
+    Some Indian govt/PSU sites ship an incomplete SSL certificate chain —
+    if the normal request fails specifically on certificate verification,
+    retry once without verification rather than giving up on that org entirely."""
     try:
         if requests:
             resp = requests.get(url, headers=HEADERS, timeout=25)
             resp.raise_for_status()
-            html = resp.text
+            return resp.text
         else:
             req = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=25) as r:
-                html = r.read().decode("utf-8", errors="ignore")
-        return html
+                return r.read().decode("utf-8", errors="ignore")
     except Exception as e:
+        err_str = str(e)
+        if requests and "CERTIFICATE_VERIFY_FAILED" in err_str:
+            try:
+                print(f"  [info] {url} has a broken SSL cert chain — retrying without verification")
+                resp = requests.get(url, headers=HEADERS, timeout=25, verify=False)
+                resp.raise_for_status()
+                return resp.text
+            except Exception as e2:
+                print(f"  [warn] failed to fetch {url} even without SSL verification: {e2}")
+                return ""
         print(f"  [warn] failed to fetch {url}: {e}")
         return ""
 
@@ -110,6 +124,13 @@ def line_hash(org: str, line: str) -> str:
 def keyword_hits(line: str, keywords: list) -> list:
     lline = line.lower()
     return [k for k in keywords if k.lower() in lline]
+
+
+def is_excluded(line: str, exclude_terms: list) -> bool:
+    """True if the line looks like an old artifact (admit card, result, etc.)
+    rather than an actual open vacancy announcement."""
+    lline = line.lower()
+    return any(term.lower() in lline for term in exclude_terms)
 
 
 def score_match(line: str, profile: dict, keyword_hit_count: int) -> str:
@@ -207,6 +228,7 @@ def main():
     orgs = config.get("organizations", [])
     keywords = config.get("keywords_any", [])
     profile = config.get("profile", {})
+    exclude_terms = config.get("exclude_if_contains", [])
 
     seen = load_json(STATE_PATH, {})  # hash -> {org, line, first_seen}
     results = load_json(RESULTS_PATH, {"last_run": None, "new_this_run": [], "all_matches": []})
@@ -228,6 +250,9 @@ def main():
             hits = keyword_hits(line, keywords)
             if not hits:
                 continue  # only care about lines matching at least one target keyword
+
+            if is_excluded(line, exclude_terms):
+                continue  # looks like an old admit-card/result/corrigendum artifact, not a live vacancy
 
             h = line_hash(name, line)
             if h in seen:
