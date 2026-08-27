@@ -1,7 +1,60 @@
 {
-  "last_run": "2026-08-27T07:26:20.594612Z",
-  "new_this_run": [],
+  "last_run": "2026-08-27T07:36:48.861478Z",
+  "new_this_run": [
+    {
+      "hash": "6d6ecb397e6c3175f51bb7ab476ca016314d2e42fb833e70b456eafc8f12efc9",
+      "org": "ISRO ISAC/URSC Bengaluru",
+      "source_url": "https://www.ursc.gov.in/jobs/jobs.jsp",
+      "line": "About Jobs URSC offers the career opportunities in various fields of specialization and qualifications. Some of the major job opportunities in Scientific and Technical Category are: Scientist/Engineer position are offered for graduates, post graduates, doctorates in the fields of Electronics, Mechanical, Computer Science, Electrical, \t\tPhysics, Chemistry, Mathematics, etc. Technical Assistant/Scientific Assistant posts are offered for Diploma/B Sc or equivalent degree in various specializations. Technician/Draughtsman posts are offered for candidates with education qualification of SSLC/SSC/MATRIC + ITI/NTC/NAC. The recruitment for Scientist/Engineer posts are mainly done through ISRO Centralised Recruitment Board (ICRB) annually. The recruitment for other S & T posts is carried out in URSC based on need. In the Administrative category, recruitment is done for various posts such as Administrative Officer, Accounts Officer, Purchase & Stores Officer, Assistants, Junior Personnel Assistants, etc. by ISRO Centralised Recruitment Board (ICRB). There will be an initial screening based on the academic performance, and other parameters given in the on-line applications and only those screened-in candidates shall be called for written test/interview as per ISRO Recruitment procedures. Latest updates on job opening will be hosted in the ISRO web-site . Applications for all the post will be received on-line only. Current Openings Advt. No. URSC:03:2026 Dated:29.07.2026 - INVITING ONLINE APPLICATIONS FOR ENGAGEMENT OF CANDIDATES AS GRADUATE AND DIPLOMA APPRENTICES IN DIFFERENT STREAMS AT URSC, BENGALURU. THE LINK FOR RECEIPT OF ONLINE APPLICATIONS WILL BE ACTIVE FROM 29.07.2026 TO 28.08.2026. Advt. No. URSC:02:2026 dated June 12, 2026 - On-line applications are invited for engaging as /Offering of Junior Research Fellow (JRF) at U R Rao Satellite Centre (URSC),Bengaluru. Click here for details Bilingual Advertisement ADVT. NO.URSC:01:2026 dated 21.03.2026 - Recruitment to the posts of Scientist/Engineer - 'SC', Scientist/Engineer - 'SD' & Medical Officer - 'SC' --- Click here for details Bilingual Advertisement",
+      "matched_keywords": [
+        "Administrative Officer",
+        "Stores Officer"
+      ],
+      "relevance": "High",
+      "pay_protection": "Unclear — check advertisement",
+      "first_seen": "2026-08-27T07:36:48.861478Z"
+    },
+    {
+      "hash": "0d44e30cca180def4b0463170b727bef1ec2f2c479fb8ae13b1c2a7fc094e0d0",
+      "org": "ISRO ISAC/URSC Bengaluru",
+      "source_url": "https://www.ursc.gov.in/jobs/jobs.jsp",
+      "line": "In the Administrative category, recruitment is done for various posts such as Administrative Officer, Accounts Officer, Purchase & Stores Officer, Assistants, Junior Personnel Assistants, etc. by ISRO Centralised Recruitment Board (ICRB).",
+      "matched_keywords": [
+        "Administrative Officer",
+        "Stores Officer"
+      ],
+      "relevance": "Medium",
+      "pay_protection": "Unclear — check advertisement",
+      "first_seen": "2026-08-27T07:36:48.861478Z"
+    }
+  ],
   "all_matches": [
+    {
+      "hash": "6d6ecb397e6c3175f51bb7ab476ca016314d2e42fb833e70b456eafc8f12efc9",
+      "org": "ISRO ISAC/URSC Bengaluru",
+      "source_url": "https://www.ursc.gov.in/jobs/jobs.jsp",
+      "line": "About Jobs URSC offers the career opportunities in various fields of specialization and qualifications. Some of the major job opportunities in Scientific and Technical Category are: Scientist/Engineer position are offered for graduates, post graduates, doctorates in the fields of Electronics, Mechanical, Computer Science, Electrical, \t\tPhysics, Chemistry, Mathematics, etc. Technical Assistant/Scientific Assistant posts are offered for Diploma/B Sc or equivalent degree in various specializations. Technician/Draughtsman posts are offered for candidates with education qualification of SSLC/SSC/MATRIC + ITI/NTC/NAC. The recruitment for Scientist/Engineer posts are mainly done through ISRO Centralised Recruitment Board (ICRB) annually. The recruitment for other S & T posts is carried out in URSC based on need. In the Administrative category, recruitment is done for various posts such as Administrative Officer, Accounts Officer, Purchase & Stores Officer, Assistants, Junior Personnel Assistants, etc. by ISRO Centralised Recruitment Board (ICRB). There will be an initial screening based on the academic performance, and other parameters given in the on-line applications and only those screened-in candidates shall be called for written test/interview as per ISRO Recruitment procedures. Latest updates on job opening will be hosted in the ISRO web-site . Applications for all the post will be received on-line only. Current Openings Advt. No. URSC:03:2026 Dated:29.07.2026 - INVITING ONLINE APPLICATIONS FOR ENGAGEMENT OF CANDIDATES AS GRADUATE AND DIPLOMA APPRENTICES IN DIFFERENT STREAMS AT URSC, BENGALURU. THE LINK FOR RECEIPT OF ONLINE APPLICATIONS WILL BE ACTIVE FROM 29.07.2026 TO 28.08.2026. Advt. No. URSC:02:2026 dated June 12, 2026 - On-line applications are invited for engaging as /Offering of Junior Research Fellow (JRF) at U R Rao Satellite Centre (URSC),Bengaluru. Click here for details Bilingual Advertisement ADVT. NO.URSC:01:2026 dated 21.03.2026 - Recruitment to the posts of Scientist/Engineer - 'SC', Scientist/Engineer - 'SD' & Medical Officer - 'SC' --- Click here for details Bilingual Advertisement",
+      "matched_keywords": [
+        "Administrative Officer",
+        "Stores Officer"
+      ],
+      "relevance": "High",
+      "pay_protection": "Unclear — check advertisement",
+      "first_seen": "2026-08-27T07:36:48.861478Z"
+    },
+    {
+      "hash": "0d44e30cca180def4b0463170b727bef1ec2f2c479fb8ae13b1c2a7fc094e0d0",
+      "org": "ISRO ISAC/URSC Bengaluru",
+      "source_url": "https://www.ursc.gov.in/jobs/jobs.jsp",
+      "line": "In the Administrative category, recruitment is done for various posts such as Administrative Officer, Accounts Officer, Purchase & Stores Officer, Assistants, Junior Personnel Assistants, etc. by ISRO Centralised Recruitment Board (ICRB).",
+      "matched_keywords": [
+        "Administrative Officer",
+        "Stores Officer"
+      ],
+      "relevance": "Medium",
+      "pay_protection": "Unclear — check advertisement",
+      "first_seen": "2026-08-27T07:36:48.861478Z"
+    },
     {
       "hash": "7289076c21dbabddd6d186295e145e01eb6dd5bdb0d09b9d39713efbdecf25fb",
       "org": "IISc Bengaluru",
